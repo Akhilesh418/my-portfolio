@@ -1,0 +1,269 @@
+/* Custom CSS */
+
+/* General Body Styling */
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #343a40; /* Dark grey for text */
+    background-color: #f8f9fa; /* Light grey background */
+    line-height: 1.7;
+    overflow-x: hidden; /* Prevent horizontal scroll issues */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    color: #212529; /* Darker grey for headings */
+}
+
+a {
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Navbar */
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: #007bff !important; /* Primary blue for brand */
+}
+
+.navbar-nav .nav-link {
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.75) !important;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #007bff !important; /* Primary blue on hover/active */
+}
+
+/* Hero Section */
+#hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/hero-bg.jpg') center center/cover no-repeat; /* Replace with your actual hero background image */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 20px;
+}
+
+#hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+#hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.btn-outline-primary {
+    color: #007bff;
+    border-color: #007bff;
+}
+.btn-outline-primary:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.btn-outline-secondary {
+    color: #6c757d;
+    border-color: #6c757d;
+}
+.btn-outline-secondary:hover {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+/* Sections */
+section {
+    padding: 80px 0; /* More padding for better visual separation */
+}
+
+section:nth-of-type(even) {
+    background-color: #f8f9fa; /* Alternate background for sections */
+}
+
+section h2 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 50px;
+    position: relative;
+    padding-bottom: 15px;
+    display: inline-block; /* To apply underline effect properly */
+}
+
+section h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: #007bff;
+    border-radius: 2px;
+}
+
+/* About Section */
+#about img {
+    border: 5px solid #007bff;
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.3);
+}
+
+/* Skills Section */
+.skill-card {
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important;
+}
+
+.skill-card i {
+    color: #007bff; /* Primary color for icons */
+}
+
+/* Projects Section */
+.project-card {
+    border: none;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 0.5rem;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important;
+}
+
+.project-card img {
+    height: 220px; /* Fixed height for project images */
+    object-fit: cover;
+    width: 100%;
+}
+
+.project-card .card-body {
+    padding: 1.5rem;
+}
+
+.project-card .card-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #007bff;
+    margin-bottom: 0.75rem;
+}
+
+.project-card .card-text {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.badge {
+    font-size: 0.8em;
+    padding: 0.5em 0.8em;
+    border-radius: 0.25rem;
+    background-color: #007bff !important;
+    color: #fff !important;
+}
+
+.btn-sm {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+}
+
+/* Contact Form */
+#contactForm .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.25);
+}
+
+.social-icon {
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #212529; /* Darker footer */
+    color: #adb5bd; /* Light grey text */
+    padding: 30px 0;
+    font-size: 0.9rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background-color: #343a40; /* Darker background for collapsed menu */
+        padding: 15px;
+        border-radius: 0.25rem;
+        margin-top: 10px;
+    }
+    .navbar-nav {
+        align-items: center; /* Center items in collapsed view */
+    }
+    .navbar-nav .nav-item {
+        margin-bottom: 10px;
+    }
+    #hero h1 {
+        font-size: 2.5rem;
+    }
+    #hero p {
+        font-size: 1.2rem;
+    }
+    section h2 {
+        font-size: 2rem;
+    }
+    section h2::after {
+        width: 60px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    #hero {
+        height: 80vh; /* Adjust height for smaller screens */
+        padding-top: 80px;
+    }
+    #hero h1 {
+        font-size: 2rem;
+    }
+    #hero p {
+        font-size: 1rem;
+    }
+    #about .col-lg-4, #about .col-lg-8 {
+        text-align: center;
+    }
+    #about img {
+        margin-bottom: 30px;
+    }
+    .project-card img {
+        height: 180px;
+    }
+    .social-icon {
+        font-size: 1.5em !important;
+    }
+}
